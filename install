@@ -1,0 +1,13 @@
+#
+
+echo "Installing git..."
+sudo apt-get update > /dev/null
+sudo apt-get install -y git > /dev/null
+
+echo "Cloning kobe-ubuntu..."
+git clone https://github.com/tenx-dev/kobe-ubuntu.git ~/.local/share/kobe-ubuntu > /dev/null
+
+# use a stable branch in the future
+# git clone -b stable https://github.com/tenx-dev/kobe-ubuntu.git ~/.local/share/kobe-ubuntu > /dev/null
+
+source ~/.local/share/kobe-ubuntu/install.sh
